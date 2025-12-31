@@ -1,0 +1,148 @@
+/* Plus Simple */
+
+/* body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+.calculator{
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+
+}
+
+button{
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #e0e0e0;
+}
+
+#display{
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
+    width: 95%;
+} */
+
+
+
+/* Plus Modern */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.calculator {
+    background: #1e1e2f;
+    width: 260px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+
+#display {
+    width: 100%;
+    height: 50px;
+    background: #111;
+    color: #00ffcc;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 10px;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #2a2a40;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+
+button:hover {
+    background: #3b3b5c;
+    transform: scale(1.05);
+}
+
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+button:nth-child(2),
+button:nth-child(3),
+button:nth-child(4),
+button:nth-child(8) {
+    background: #ff9500;
+}
+
+button:nth-child(2):hover,
+button:nth-child(3):hover,
+button:nth-child(4):hover,
+button:nth-child(8):hover {
+    background: #ffaa33;
+}
+
+/* زر C */
+button:first-child {
+    background: #ff3b3b;
+}
+
+button:first-child:hover {
+    background: #ff5c5c;
+}
+
+/* زر = */
+button:nth-child(12) {
+    background: #00c896;
+    grid-row: span 2;
+}
+
+button:nth-child(12):hover {
+    background: #00e0aa;
+}
